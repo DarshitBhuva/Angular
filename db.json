@@ -1,0 +1,185 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "productName": "Laptop",
+        "description": "Powerful and portable computing device",
+        "category": "Electronics",
+        "price": 999.99,
+        "stock": 50,
+        "image": "https://example.com/laptop_image.jpg"
+      },
+      {
+        "id": 2,
+        "productName": "Smartphone",
+        "description": "Feature-packed mobile phone",
+        "category": "Electronics",
+        "price": 499.99,
+        "stock": 100,
+        "image": "https://example.com/smartphone_image.jpg"
+      },
+      {
+        "id": 3,
+        "productName": "Running Shoes",
+        "description": "Comfortable and durable athletic footwear",
+        "category": "Fashion",
+        "price": 79.99,
+        "stock": 200,
+        "image": "https://example.com/running_shoes_image.jpg"
+      },
+      {
+        "id": 4,
+        "productName": "Coffee Maker",
+        "description": "Brews delicious coffee with ease",
+        "category": "Appliances",
+        "price": 129.99,
+        "stock": 30,
+        "image": "https://example.com/coffee_maker_image.jpg"
+      },
+      {
+        "id": 5,
+        "productName": "Smart TV",
+        "description": "High-definition television with smart features",
+        "category": "Electronics",
+        "price": 799.99,
+        "stock": 20,
+        "image": "https://example.com/smart_tv_image.jpg"
+      },
+      {
+        "id": 6,
+        "productName": "Graphic Design Software",
+        "description": "Professional software for graphic designers",
+        "category": "Software",
+        "price": 249.99,
+        "stock": 15,
+        "image": "https://example.com/graphic_software_image.jpg"
+      },
+      {
+        "id": 7,
+        "productName": "Backpack",
+        "description": "Spacious and durable backpack for everyday use",
+        "category": "Fashion",
+        "price": 39.99,
+        "stock": 100,
+        "image": "https://example.com/backpack_image.jpg"
+      },
+      {
+        "id": 8,
+        "productName": "Wireless Headphones",
+        "description": "Immersive audio experience without wires",
+        "category": "Electronics",
+        "price": 149.99,
+        "stock": 50,
+        "image": "https://example.com/wireless_headphones_image.jpg"
+      },
+      {
+        "id": 9,
+        "productName": "Gaming Console",
+        "description": "Next-gen gaming console for a thrilling gaming experience",
+        "category": "Gaming",
+        "price": 299.99,
+        "stock": 25,
+        "image": "https://example.com/gaming_console_image.jpg"
+      },
+      {
+        "id": 10,
+        "productName": "Digital Camera",
+        "description": "Capture stunning moments with high-quality images",
+        "category": "Electronics",
+        "price": 449.99,
+        "stock": 30,
+        "image": "https://example.com/digital_camera_image.jpg"
+      },
+      {
+        "id": 11,
+        "productName": "Fitness Tracker",
+        "description": "Monitor your health and fitness activities",
+        "category": "Health",
+        "price": 89.99,
+        "stock": 75,
+        "image": "https://example.com/fitness_tracker_image.jpg"
+      },
+      {
+        "id": 12,
+        "productName": "Toaster Oven",
+        "description": "Versatile toaster oven for quick and easy cooking",
+        "category": "Appliances",
+        "price": 79.99,
+        "stock": 40,
+        "image": "https://example.com/toaster_oven_image.jpg"
+      },
+      {
+        "id": 13,
+        "productName": "E-book Reader",
+        "description": "Portable device for reading digital books",
+        "category": "Electronics",
+        "price": 129.99,
+        "stock": 60,
+        "image": "https://example.com/ebook_reader_image.jpg"
+      },
+      {
+        "id": 14,
+        "productName": "Sneakers",
+        "description": "Stylish and comfortable casual sneakers",
+        "category": "Fashion",
+        "price": 59.99,
+        "stock": 150,
+        "image": "https://example.com/sneakers_image.jpg"
+      },
+      {
+        "id": 15,
+        "productName": "External Hard Drive",
+        "description": "Expand your storage capacity for data backup",
+        "category": "Electronics",
+        "price": 129.99,
+        "stock": 35,
+        "image": "https://example.com/external_hard_drive_image.jpg"
+      },
+      {
+        "id": 16,
+        "productName": "Desk Chair",
+        "description": "Ergonomic chair for comfortable desk work",
+        "category": "Furniture",
+        "price": 149.99,
+        "stock": 20,
+        "image": "https://example.com/desk_chair_image.jpg"
+      },
+      {
+        "id": 17,
+        "productName": "Blender",
+        "description": "Blend your favorite fruits and vegetables for a healthy smoothie",
+        "category": "Appliances",
+        "price": 69.99,
+        "stock": 45,
+        "image": "https://example.com/blender_image.jpg"
+      },
+      {
+        "id": 18,
+        "productName": "Smart Thermostat",
+        "description": "Control your home's temperature with smart technology",
+        "category": "Home",
+        "price": 129.99,
+        "stock": 30,
+        "image": "https://example.com/smart_thermostat_image.jpg"
+      },
+      {
+        "id": 19,
+        "productName": "Wireless Mouse",
+        "description": "Convenient and clutter-free mouse for your computer",
+        "category": "Electronics",
+        "price": 29.99,
+        "stock": 80,
+        "image": "https://example.com/wireless_mouse_image.jpg"
+      },
+      {
+        "id": 20,
+        "productName": "Electric Toothbrush",
+        "description": "Keep your teeth clean with advanced electric toothbrush technology",
+        "category": "Health",
+        "price": 49.99,
+        "stock": 50,
+        "image": "https://example.com/electric_toothbrush_image.jpg"
+      }
+    ]
+  }
+  
