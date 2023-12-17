@@ -1,185 +1,763 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "productName": "Laptop",
-        "description": "Powerful and portable computing device",
-        "category": "Electronics",
-        "price": 999.99,
-        "stock": 50,
-        "image": "https://example.com/laptop_image.jpg"
+  "products": [
+    {
+      "id": 1,
+      "productName": "Laptop",
+      "description": "Powerful and portable computing device",
+      "category": "Electronics",
+      "price": 999.99,
+      "stock": 50,
+      "image": "https://example.com/laptop_image.jpg"
+    },
+    {
+      "id": 2,
+      "productName": "Smartphone",
+      "description": "Feature-packed mobile phone",
+      "category": "Electronics",
+      "price": 499.99,
+      "stock": 100,
+      "image": "https://example.com/smartphone_image.jpg"
+    },
+    {
+      "id": 3,
+      "productName": "Running Shoes",
+      "description": "Comfortable and durable athletic footwear",
+      "category": "Fashion",
+      "price": 79.99,
+      "stock": 200,
+      "image": "https://example.com/running_shoes_image.jpg"
+    },
+    {
+      "id": 4,
+      "productName": "Coffee Maker",
+      "description": "Brews delicious coffee with ease",
+      "category": "Appliances",
+      "price": 129.99,
+      "stock": 30,
+      "image": "https://example.com/coffee_maker_image.jpg"
+    },
+    {
+      "id": 5,
+      "productName": "Smart TV",
+      "description": "High-definition television with smart features",
+      "category": "Electronics",
+      "price": 799.99,
+      "stock": 20,
+      "image": "https://example.com/smart_tv_image.jpg"
+    },
+    {
+      "id": 6,
+      "productName": "Graphic Design Software",
+      "description": "Professional software for graphic designers",
+      "category": "Software",
+      "price": 249.99,
+      "stock": 15,
+      "image": "https://example.com/graphic_software_image.jpg"
+    },
+    {
+      "id": 7,
+      "productName": "Backpack",
+      "description": "Spacious and durable backpack for everyday use",
+      "category": "Fashion",
+      "price": 39.99,
+      "stock": 100,
+      "image": "https://example.com/backpack_image.jpg"
+    },
+    {
+      "id": 8,
+      "productName": "Wireless Headphones",
+      "description": "Immersive audio experience without wires",
+      "category": "Electronics",
+      "price": 149.99,
+      "stock": 50,
+      "image": "https://example.com/wireless_headphones_image.jpg"
+    },
+    {
+      "id": 9,
+      "productName": "Gaming Console",
+      "description": "Next-gen gaming console for a thrilling gaming experience",
+      "category": "Gaming",
+      "price": 299.99,
+      "stock": 25,
+      "image": "https://example.com/gaming_console_image.jpg"
+    },
+    {
+      "id": 10,
+      "productName": "Digital Camera",
+      "description": "Capture stunning moments with high-quality images",
+      "category": "Electronics",
+      "price": 449.99,
+      "stock": 30,
+      "image": "https://example.com/digital_camera_image.jpg"
+    },
+    {
+      "id": 11,
+      "productName": "Fitness Tracker",
+      "description": "Monitor your health and fitness activities",
+      "category": "Health",
+      "price": 89.99,
+      "stock": 75,
+      "image": "https://example.com/fitness_tracker_image.jpg"
+    },
+    {
+      "id": 12,
+      "productName": "Toaster Oven",
+      "description": "Versatile toaster oven for quick and easy cooking",
+      "category": "Appliances",
+      "price": 79.99,
+      "stock": 40,
+      "image": "https://example.com/toaster_oven_image.jpg"
+    },
+    {
+      "id": 13,
+      "productName": "E-book Reader",
+      "description": "Portable device for reading digital books",
+      "category": "Electronics",
+      "price": 129.99,
+      "stock": 60,
+      "image": "https://example.com/ebook_reader_image.jpg"
+    },
+    {
+      "id": 14,
+      "productName": "Sneakers",
+      "description": "Stylish and comfortable casual sneakers",
+      "category": "Fashion",
+      "price": 59.99,
+      "stock": 150,
+      "image": "https://example.com/sneakers_image.jpg"
+    },
+    {
+      "id": 15,
+      "productName": "External Hard Drive",
+      "description": "Expand your storage capacity for data backup",
+      "category": "Electronics",
+      "price": 129.99,
+      "stock": 35,
+      "image": "https://example.com/external_hard_drive_image.jpg"
+    },
+    {
+      "id": 16,
+      "productName": "Desk Chair",
+      "description": "Ergonomic chair for comfortable desk work",
+      "category": "Furniture",
+      "price": 149.99,
+      "stock": 20,
+      "image": "https://example.com/desk_chair_image.jpg"
+    },
+    {
+      "id": 17,
+      "productName": "Blender",
+      "description": "Blend your favorite fruits and vegetables for a healthy smoothie",
+      "category": "Appliances",
+      "price": 69.99,
+      "stock": 45,
+      "image": "https://example.com/blender_image.jpg"
+    },
+    {
+      "id": 18,
+      "productName": "Smart Thermostat",
+      "description": "Control your home's temperature with smart technology",
+      "category": "Home",
+      "price": 129.99,
+      "stock": 30,
+      "image": "https://example.com/smart_thermostat_image.jpg"
+    },
+    {
+      "id": 19,
+      "productName": "Wireless Mouse",
+      "description": "Convenient and clutter-free mouse for your computer",
+      "category": "Electronics",
+      "price": 29.99,
+      "stock": 80,
+      "image": "https://example.com/wireless_mouse_image.jpg"
+    },
+    {
+      "id": 20,
+      "productName": "Electric Toothbrush",
+      "description": "Keep your teeth clean with advanced electric toothbrush technology",
+      "category": "Health",
+      "price": 49.99,
+      "stock": 50,
+      "image": "https://example.com/electric_toothbrush_image.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "userName": "John Doe",
+      "address": {
+        "street": "123 Main Street",
+        "city": "Anytown",
+        "state": "CA",
+        "zipCode": "12345"
       },
-      {
-        "id": 2,
-        "productName": "Smartphone",
-        "description": "Feature-packed mobile phone",
-        "category": "Electronics",
-        "price": 499.99,
-        "stock": 100,
-        "image": "https://example.com/smartphone_image.jpg"
+      "email": "john.doe@example.com",
+      "phone": "+1 (555) 123-4567",
+      "gender": "Male"
+    },
+    {
+      "id": 2,
+      "userName": "Sophia Hall",
+      "address": {
+        "street": "666 Birch Lane",
+        "city": "Hometown",
+        "state": "FL",
+        "zipCode": "76543"
       },
-      {
-        "id": 3,
-        "productName": "Running Shoes",
-        "description": "Comfortable and durable athletic footwear",
-        "category": "Fashion",
-        "price": 79.99,
-        "stock": 200,
-        "image": "https://example.com/running_shoes_image.jpg"
+      "email": "sophia.hall@example.com",
+      "phone": "+1 (555) 234-5678",
+      "gender": "Female"
+    },
+    {
+      "id": 3,
+      "userName": "Charlie Brown",
+      "address": {
+        "street": "654 Birch Lane",
+        "city": "Sometown",
+        "state": "NY",
+        "zipCode": "56789"
       },
-      {
-        "id": 4,
-        "productName": "Coffee Maker",
-        "description": "Brews delicious coffee with ease",
-        "category": "Appliances",
-        "price": 129.99,
-        "stock": 30,
-        "image": "https://example.com/coffee_maker_image.jpg"
+      "email": "charlie.brown@example.com",
+      "phone": "+1 (555) 345-6789",
+      "gender": "Male"
+    },
+    {
+      "id": 4,
+      "userName": "Isabella Turner",
+      "address": {
+        "street": "505 Oak Avenue",
+        "city": "Hilltop",
+        "state": "NY",
+        "zipCode": "76543"
       },
-      {
-        "id": 5,
-        "productName": "Smart TV",
-        "description": "High-definition television with smart features",
-        "category": "Electronics",
-        "price": 799.99,
-        "stock": 20,
-        "image": "https://example.com/smart_tv_image.jpg"
+      "email": "isabella.turner@example.com",
+      "phone": "+1 (555) 234-5678",
+      "gender": "Female"
+    },
+    {
+      "id": 5,
+      "userName": "Grace Wilson",
+      "address": {
+        "street": "222 Oak Avenue",
+        "city": "Mountaintown",
+        "state": "CO",
+        "zipCode": "87654"
       },
-      {
-        "id": 6,
-        "productName": "Graphic Design Software",
-        "description": "Professional software for graphic designers",
-        "category": "Software",
-        "price": 249.99,
-        "stock": 15,
-        "image": "https://example.com/graphic_software_image.jpg"
+      "email": "grace.wilson@example.com",
+      "phone": "+1 (555) 234-5678",
+      "gender": "Female"
+    },
+    {
+      "id": 6,
+      "userName": "William Lewis",
+      "address": {
+        "street": "202 Birch Lane",
+        "city": "Riverside",
+        "state": "CA",
+        "zipCode": "23456"
       },
-      {
-        "id": 7,
-        "productName": "Backpack",
-        "description": "Spacious and durable backpack for everyday use",
-        "category": "Fashion",
-        "price": 39.99,
-        "stock": 100,
-        "image": "https://example.com/backpack_image.jpg"
+      "email": "william.lewis@example.com",
+      "phone": "+1 (555) 678-1234",
+      "gender": "Male"
+    },
+    {
+      "id": 7,
+      "userName": "Jackson Wright",
+      "address": {
+        "street": "1010 Oak Avenue",
+        "city": "Riverside",
+        "state": "CA",
+        "zipCode": "23456"
       },
-      {
-        "id": 8,
-        "productName": "Wireless Headphones",
-        "description": "Immersive audio experience without wires",
-        "category": "Electronics",
-        "price": 149.99,
-        "stock": 50,
-        "image": "https://example.com/wireless_headphones_image.jpg"
+      "email": "jackson.wright@example.com",
+      "phone": "+1 (555) 678-1234",
+      "gender": "Male"
+    },
+    {
+      "id": 8,
+      "userName": "Daniel Clark",
+      "address": {
+        "street": "999 Oak Avenue",
+        "city": "Valleytown",
+        "state": "AZ",
+        "zipCode": "87654"
       },
-      {
-        "id": 9,
-        "productName": "Gaming Console",
-        "description": "Next-gen gaming console for a thrilling gaming experience",
-        "category": "Gaming",
-        "price": 299.99,
-        "stock": 25,
-        "image": "https://example.com/gaming_console_image.jpg"
+      "email": "daniel.clark@example.com",
+      "phone": "+1 (555) 876-5432",
+      "gender": "Male"
+    },
+    {
+      "id": 9,
+      "userName": "Ava Fisher",
+      "address": {
+        "street": "909 Cedar Avenue",
+        "city": "Southtown",
+        "state": "TX",
+        "zipCode": "76543"
       },
-      {
-        "id": 10,
-        "productName": "Digital Camera",
-        "description": "Capture stunning moments with high-quality images",
-        "category": "Electronics",
-        "price": 449.99,
-        "stock": 30,
-        "image": "https://example.com/digital_camera_image.jpg"
+      "email": "ava.fisher@example.com",
+      "phone": "+1 (555) 234-5678",
+      "gender": "Female"
+    },
+    {
+      "id": 10,
+      "userName": "Michael Turner",
+      "address": {
+        "street": "555 Elm Street",
+        "city": "Hometown",
+        "state": "FL",
+        "zipCode": "65432"
       },
-      {
-        "id": 11,
-        "productName": "Fitness Tracker",
-        "description": "Monitor your health and fitness activities",
-        "category": "Health",
-        "price": 89.99,
-        "stock": 75,
-        "image": "https://example.com/fitness_tracker_image.jpg"
+      "email": "michael.turner@example.com",
+      "phone": "+1 (555) 876-5432",
+      "gender": "Male"
+    },
+    {
+      "id": 11,
+      "userName": "Sophie Scott",
+      "address": {
+        "street": "707 Birch Lane",
+        "city": "Lakeside",
+        "state": "IL",
+        "zipCode": "76543"
       },
-      {
-        "id": 12,
-        "productName": "Toaster Oven",
-        "description": "Versatile toaster oven for quick and easy cooking",
-        "category": "Appliances",
-        "price": 79.99,
-        "stock": 40,
-        "image": "https://example.com/toaster_oven_image.jpg"
+      "email": "sophie.scott@example.com",
+      "phone": "+1 (555) 345-6789",
+      "gender": "Female"
+    },
+    {
+      "id": 12,
+      "userName": "Mia Jackson",
+      "address": {
+        "street": "303 Pine Lane",
+        "city": "Riverside",
+        "state": "CA",
+        "zipCode": "76543"
       },
-      {
-        "id": 13,
-        "productName": "E-book Reader",
-        "description": "Portable device for reading digital books",
-        "category": "Electronics",
-        "price": 129.99,
-        "stock": 60,
-        "image": "https://example.com/ebook_reader_image.jpg"
+      "email": "mia.jackson@example.com",
+      "phone": "+1 (555) 345-6789",
+      "gender": "Female"
+    },
+    {
+      "id": 13,
+      "userName": "Olivia White",
+      "address": {
+        "street": "444 Cedar Avenue",
+        "city": "Rivertown",
+        "state": "IL",
+        "zipCode": "23456"
       },
-      {
-        "id": 14,
-        "productName": "Sneakers",
-        "description": "Stylish and comfortable casual sneakers",
-        "category": "Fashion",
-        "price": 59.99,
-        "stock": 150,
-        "image": "https://example.com/sneakers_image.jpg"
+      "email": "olivia.white@example.com",
+      "phone": "+1 (555) 345-6789",
+      "gender": "Female"
+    },
+    {
+      "id": 14,
+      "userName": "Noah Miller",
+      "address": {
+        "street": "606 Elm Street",
+        "city": "Lakeside",
+        "state": "IL",
+        "zipCode": "23456"
       },
-      {
-        "id": 15,
-        "productName": "External Hard Drive",
-        "description": "Expand your storage capacity for data backup",
-        "category": "Electronics",
-        "price": 129.99,
-        "stock": 35,
-        "image": "https://example.com/external_hard_drive_image.jpg"
+      "email": "noah.miller@example.com",
+      "phone": "+1 (555) 678-1234",
+      "gender": "Male"
+    },
+    {
+      "id": 15,
+      "userName": "Frank Rodriguez",
+      "address": {
+        "street": "333 Maple Lane",
+        "city": "Rivertown",
+        "state": "IL",
+        "zipCode": "76543"
       },
-      {
-        "id": 16,
-        "productName": "Desk Chair",
-        "description": "Ergonomic chair for comfortable desk work",
-        "category": "Furniture",
-        "price": 149.99,
-        "stock": 20,
-        "image": "https://example.com/desk_chair_image.jpg"
+      "email": "frank.rodriguez@example.com",
+      "phone": "+1 (555) 678-1234",
+      "gender": "Male"
+    },
+    {
+      "id": 16,
+      "userName": "Ethan Taylor",
+      "address": {
+        "street": "404 Cedar Avenue",
+        "city": "Hilltop",
+        "state": "NY",
+        "zipCode": "87654"
       },
-      {
-        "id": 17,
-        "productName": "Blender",
-        "description": "Blend your favorite fruits and vegetables for a healthy smoothie",
-        "category": "Appliances",
-        "price": 69.99,
-        "stock": 45,
-        "image": "https://example.com/blender_image.jpg"
+      "email": "ethan.taylor@example.com",
+      "phone": "+1 (555) 876-5432",
+      "gender": "Male"
+    },
+    {
+      "id": 17,
+      "userName": "David Lee",
+      "address": {
+        "street": "111 Pine Street",
+        "city": "Mountaintown",
+        "state": "CO",
+        "zipCode": "54321"
       },
-      {
-        "id": 18,
-        "productName": "Smart Thermostat",
-        "description": "Control your home's temperature with smart technology",
-        "category": "Home",
-        "price": 129.99,
-        "stock": 30,
-        "image": "https://example.com/smart_thermostat_image.jpg"
+      "email": "david.lee@example.com",
+      "phone": "+1 (555) 876-5432",
+      "gender": "Male"
+    },
+    {
+      "id": 18,
+      "userName": "Liam Hernandez",
+      "address": {
+        "street": "808 Pine Lane",
+        "city": "Southtown",
+        "state": "TX",
+        "zipCode": "87654"
       },
-      {
-        "id": 19,
-        "productName": "Wireless Mouse",
-        "description": "Convenient and clutter-free mouse for your computer",
-        "category": "Electronics",
-        "price": 29.99,
-        "stock": 80,
-        "image": "https://example.com/wireless_mouse_image.jpg"
+      "email": "liam.hernandez@example.com",
+      "phone": "+1 (555) 876-5432",
+      "gender": "Male"
+    },
+    {
+      "id": 19,
+      "userName": "Emma Harris",
+      "address": {
+        "street": "888 Cedar Avenue",
+        "city": "Hillside",
+        "state": "NC",
+        "zipCode": "76543"
       },
-      {
-        "id": 20,
-        "productName": "Electric Toothbrush",
-        "description": "Keep your teeth clean with advanced electric toothbrush technology",
-        "category": "Health",
-        "price": 49.99,
-        "stock": 50,
-        "image": "https://example.com/electric_toothbrush_image.jpg"
-      }
-    ]
-  }
-  
+      "email": "emma.harris@example.com",
+      "phone": "+1 (555) 345-6789",
+      "gender": "Female"
+    },
+    {
+      "id": 20,
+      "userName": "Ava Turner",
+      "address": {
+        "street": "101 Elm Street",
+        "city": "Valleytown",
+        "state": "AZ",
+        "zipCode": "76543"
+      },
+      "email": "ava.turner@example.com",
+      "phone": "+1 (555) 234-5678",
+      "gender": "Female"
+    },
+    {
+      "id": 21,
+      "userName": "Alice Williams",
+      "address": {
+        "street": "321 Elm Street",
+        "city": "Othertown",
+        "state": "TX",
+        "zipCode": "98765"
+      },
+      "email": "alice.williams@example.com",
+      "phone": "+1 (555) 876-5432",
+      "gender": "Female"
+    },
+    {
+      "id": 22,
+      "userName": "Matthew Davis",
+      "address": {
+        "street": "777 Pine Lane",
+        "city": "Hillside",
+        "state": "NC",
+        "zipCode": "23456"
+      },
+      "email": "matthew.davis@example.com",
+      "phone": "+1 (555) 678-1234",
+      "gender": "Male"
+    },
+    {
+      "id": 23,
+      "userName": "Jane Smith",
+      "address": {
+        "street": "456 Oak Avenue",
+        "city": "Anytown",
+        "state": "CA",
+        "zipCode": "67890"
+      },
+      "email": "jane.smith@example.com",
+      "phone": "+1 (555) 987-6543",
+      "gender": "Female"
+    },
+    {
+      "id": 24,
+      "userName": "Bob Johnson",
+      "address": {
+        "street": "789 Pine Lane",
+        "city": "Othertown",
+        "state": "TX",
+        "zipCode": "54321"
+      },
+      "email": "bob.johnson@example.com",
+      "phone": "+1 (555) 234-5678",
+      "gender": "Male"
+    },
+    {
+      "id": 25,
+      "userName": "Eva Martinez",
+      "address": {
+        "street": "987 Cedar Avenue",
+        "city": "Sometown",
+        "state": "NY",
+        "zipCode": "23456"
+      },
+      "email": "eva.martinez@example.com",
+      "phone": "+1 (555) 678-1234",
+      "gender": "Female"
+    }
+  ],
+  "cities": [
+    {
+      "id": 1,
+      "cityName": "New York City",
+      "country": "United States",
+      "population": 8398748,
+      "latitude": 40.7128,
+      "longitude": -74.0060,
+      "timezone": "America/New_York",
+      "language": "English"
+    },
+    {
+      "id": 2,
+      "cityName": "Tokyo",
+      "country": "Japan",
+      "population": 37435191,
+      "latitude": 35.6895,
+      "longitude": 139.6917,
+      "timezone": "Asia/Tokyo",
+      "language": "Japanese"
+    },
+    {
+      "id": 3,
+      "cityName": "London",
+      "country": "United Kingdom",
+      "population": 8908081,
+      "latitude": 51.5099,
+      "longitude": -0.1180,
+      "timezone": "Europe/London",
+      "language": "English"
+    },
+    {
+      "id": 4,
+      "cityName": "Paris",
+      "country": "France",
+      "population": 2140526,
+      "latitude": 48.8566,
+      "longitude": 2.3522,
+      "timezone": "Europe/Paris",
+      "language": "French"
+    },
+    {
+      "id": 5,
+      "cityName": "Beijing",
+      "country": "China",
+      "population": 21723000,
+      "latitude": 39.9042,
+      "longitude": 116.4074,
+      "timezone": "Asia/Shanghai",
+      "language": "Mandarin"
+    },
+    {
+      "id": 6,
+      "cityName": "Mumbai",
+      "country": "India",
+      "population": 12442373,
+      "latitude": 19.0760,
+      "longitude": 72.8777,
+      "timezone": "Asia/Kolkata",
+      "language": "Hindi"
+    },
+    {
+      "id": 7,
+      "cityName": "São Paulo",
+      "country": "Brazil",
+      "population": 21292893,
+      "latitude": -23.5505,
+      "longitude": -46.6333,
+      "timezone": "America/Sao_Paulo",
+      "language": "Portuguese"
+    },
+    {
+      "id": 8,
+      "cityName": "Istanbul",
+      "country": "Turkey",
+      "population": 15460732,
+      "latitude": 41.0082,
+      "longitude": 28.9784,
+      "timezone": "Europe/Istanbul",
+      "language": "Turkish"
+    },
+    {
+      "id": 9,
+      "cityName": "Cairo",
+      "country": "Egypt",
+      "population": 10425760,
+      "latitude": 30.0444,
+      "longitude": 31.2357,
+      "timezone": "Africa/Cairo",
+      "language": "Arabic"
+    },
+    {
+      "id": 10,
+      "cityName": "Moscow",
+      "country": "Russia",
+      "population": 12615882,
+      "latitude": 55.7558,
+      "longitude": 37.6176,
+      "timezone": "Europe/Moscow",
+      "language": "Russian"
+    },
+    {
+      "id": 11,
+      "cityName": "Sydney",
+      "country": "Australia",
+      "population": 5312163,
+      "latitude": -33.8688,
+      "longitude": 151.2093,
+      "timezone": "Australia/Sydney",
+      "language": "English"
+    },
+    {
+      "id": 12,
+      "cityName": "Johannesburg",
+      "country": "South Africa",
+      "population": 4972425,
+      "latitude": -26.2041,
+      "longitude": 28.0473,
+      "timezone": "Africa/Johannesburg",
+      "language": "Zulu, English, Afrikaans"
+    },
+    {
+      "id": 13,
+      "cityName": "Toronto",
+      "country": "Canada",
+      "population": 2731571,
+      "latitude": 43.6532,
+      "longitude": -79.3832,
+      "timezone": "America/Toronto",
+      "language": "English, French"
+    },
+    {
+      "id": 14,
+      "cityName": "Berlin",
+      "country": "Germany",
+      "population": 3669491,
+      "latitude": 52.5200,
+      "longitude": 13.4050,
+      "timezone": "Europe/Berlin",
+      "language": "German"
+    },
+    {
+      "id": 15,
+      "cityName": "Mexico City",
+      "country": "Mexico",
+      "population": 9209944,
+      "latitude": 19.4326,
+      "longitude": -99.1332,
+      "timezone": "America/Mexico_City",
+      "language": "Spanish"
+    },
+    {
+      "id": 16,
+      "cityName": "Vancouver",
+      "country": "Canada",
+      "population": 631486,
+      "latitude": 49.2827,
+      "longitude": -123.1207,
+      "timezone": "America/Vancouver",
+      "language": "English, French"
+    },
+    {
+      "id": 17,
+      "cityName": "Madrid",
+      "country": "Spain",
+      "population": 6641243,
+      "latitude": 40.4168,
+      "longitude": -3.7038,
+      "timezone": "Europe/Madrid",
+      "language": "Spanish"
+    },
+    {
+      "id": 18,
+      "cityName": "Seoul",
+      "country": "South Korea",
+      "population": 9776000,
+      "latitude": 37.5665,
+      "longitude": 126.9780,
+      "timezone": "Asia/Seoul",
+      "language": "Korean"
+    },
+    {
+      "id": 19,
+      "cityName": "Vienna",
+      "country": "Austria",
+      "population": 1897491,
+      "latitude": 48.8566,
+      "longitude": 2.3522,
+      "timezone": "Europe/Vienna",
+      "language": "German"
+    },
+    {
+      "id": 20,
+      "cityName": "Osaka",
+      "country": "Japan",
+      "population": 1912837,
+      "latitude": 34.6937,
+      "longitude": 135.5022,
+      "timezone": "Asia/Tokyo",
+      "language": "Japanese"
+    },
+    {
+      "id": 21,
+      "cityName": "Delhi",
+      "country": "India",
+      "population": 30129764,
+      "latitude": 28.6139,
+      "longitude": 77.2090,
+      "timezone": "Asia/Kolkata",
+      "language": "Hindi"
+    },
+    {
+      "id": 22,
+      "cityName": "Toronto",
+      "country": "Canada",
+      "population": 2731571,
+      "latitude": 43.6532,
+      "longitude": -79.3832,
+      "timezone": "America/Toronto",
+      "language": "English, French"
+    },
+    {
+      "id": 23,
+      "cityName": "St. Petersburg",
+      "country": "Russia",
+      "population": 5383890,
+      "latitude": 59.9343,
+      "longitude": 30.3351,
+      "timezone": "Europe/Moscow",
+      "language": "Russian"
+    },
+    {
+      "id": 24,
+      "cityName": "Sydney",
+      "country": "Australia",
+      "population": 5312163,
+      "latitude": -33.8688,
+      "longitude": 151.2093,
+      "timezone": "Australia/Sydney",
+      "language": "English"
+    },
+    {
+      "id": 25,
+      "cityName": "Cape Town",
+      "country": "South Africa",
+      "population": 3786126,
+      "latitude": -33.9180,
+      "longitude": 18.4233,
+      "timezone": "Africa/Johannesburg",
+      "language": "Zulu, English, Afrikaans"
+    }
+  ]
+}

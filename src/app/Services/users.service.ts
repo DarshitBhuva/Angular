@@ -1,23 +1,21 @@
 import { Injectable } from '@angular/core';
-import { Product } from '../Interfaces/product';
+import { User } from '../Interfaces/user';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ProductsService {
+export class UsersService {
 
   constructor() { }
 
-  url = ' http://localhost:3000/products';
+  url = ' http://localhost:3000/users';
 
-  async getAllProducts() : Promise<Product[]>{
-
+  async getAllUsers() : Promise<User[]>{
     const data = await fetch(this.url);
     return await data.json() ?? [];
-    
   }
 
-  async getProductById(id: number = 0): Promise<Product> {
+  async getUserById(id : number) : Promise<User>{
     const data = await fetch(`${this.url}/${id}`);
     return await data.json() ?? {};
   }

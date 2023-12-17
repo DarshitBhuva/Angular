@@ -12,11 +12,14 @@ export class ProductsComponent {
 
     // productService : ProductsService = inject(ProductsService);
     productList : Product[] = [];
+    uniqueProdCategories : string[] = [];
+
+    filterText = "All";
 
     constructor(private productService : ProductsService){
       this.productService.getAllProducts().then((productList: Product[])=>{
         this.productList = productList;
-        // console.log(productList)
+        this.uniqueProdCategories = Array.from(new Set(this.productList.map(prod=>prod.category)))
       })
     }
 }

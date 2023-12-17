@@ -14,10 +14,9 @@ export class ProductDetailComponent {
   product!: Product;
   productId!: number;
 
-
   
   constructor(private productService: ProductsService, private route: ActivatedRoute){
-
+    
     this.route.params.subscribe((params: Params) => {
       // Extract the 'id' parameter and convert it to a number
       this.productId = params['id'];
@@ -25,6 +24,8 @@ export class ProductDetailComponent {
     });
 
     this.productService.getProductById(this.productId).then((product:Product)=>{
+      if(product !== undefined)
+        this.product = product;
       console.log(product);
     })
   }

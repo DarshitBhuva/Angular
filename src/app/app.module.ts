@@ -10,6 +10,12 @@ import { ProductsComponent } from './Models/products/products.component';
 import { UsersComponent } from './Models/users/users.component';
 import { CitiesComponent } from './Models/cities/cities.component';
 import { ProductDetailComponent } from './Models/products/product-detail/product-detail.component';
+import { UserDetailComponent } from './Models/users/user-detail/user-detail.component';
+import { CityDetailComponent } from './Models/cities/city-detail/city-detail.component';
+import { FormsModule } from '@angular/forms';
+import { genderFilterPipe } from './Pipes/UserPipe/gender-filter.pipe';
+import { CategoryFilterPipe } from './Pipes/ProductPipe/category-filter.pipe';
+import { CountryFilterPipe } from './Pipes/CityPipe/country-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -20,11 +26,17 @@ import { ProductDetailComponent } from './Models/products/product-detail/product
     ProductsComponent,
     UsersComponent,
     CitiesComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    UserDetailComponent,
+    CityDetailComponent,
+    genderFilterPipe,
+    CategoryFilterPipe,
+    CountryFilterPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

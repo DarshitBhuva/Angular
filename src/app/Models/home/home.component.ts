@@ -7,6 +7,32 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  categories : string[] = ['products', 'users', 'cities'];
+  categories: string[] = ['products', 'users', 'cities'];
+
+  homeItems = [
+    {
+      category: 'products',
+      name: "Products",
+      url: "../../../assets/products.png"
+
+    },
+
+    {
+      category: 'users',
+      name: "Users",
+      url: "../../../assets/users.png"
+
+    },
+
+    {
+      category: 'cities',
+      name: "Cities",
+      url: "../../../assets/cities.png"
+
+    },
+
+  
+  
+  ]
 
 }

@@ -1,16 +1,25 @@
 <div class="container my- 5">
     <h1 class="mt-5 text-center">Products</h1>
+
+    <b>Filter By:</b>
+    <select name="gender" class="form-select mt-2" [(ngModel)] = "filterText"> 
+        <option value="All">All</option>
+        <option *ngFor="let c of uniqueProdCategories" [value]="c">{{c}}</option>
+        
+    </select>
+
     <table class="table mt-5 table-striped table-bordered">
-        <thead>
+        <thead class="table-dark">
             <tr>
                 <th>Product Name</th>
                 <th>Category</th>
                 <th>Price</th>
                 <th>Stock</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let product of productList">
+            <tr *ngFor="let product of productList | categoryfilter : filterText">
                 <td>{{product.productName}}</td>
                 <td>{{product.category}}</td>
                 <td>{{product.price}}</td>
