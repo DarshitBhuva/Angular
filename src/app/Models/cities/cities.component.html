@@ -1,7 +1,9 @@
 <div class="container my- 5">
     <h1 class="mt-5 text-center">Cities</h1>
 
-    <b>Filter By: </b>
+    <h4>Filter By: </h4>
+
+    <b class="mt-3">Country:</b>
     <select name="gender" class="form-select mt-2" [(ngModel)] = "filterText"> 
         <option value="All">All</option>
         <option *ngFor="let c of uniqueCountries" [value]="c">{{c}}</option>

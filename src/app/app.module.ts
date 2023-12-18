@@ -17,6 +17,8 @@ import { genderFilterPipe } from './Pipes/UserPipe/gender-filter.pipe';
 import { CategoryFilterPipe } from './Pipes/ProductPipe/category-filter.pipe';
 import { CountryFilterPipe } from './Pipes/CityPipe/country-filter.pipe';
 import { StockFilterPipe } from './Pipes/ProductPipe/stock-filter.pipe';
+import { StateFilterPipe } from './Pipes/UserPipe/state.filter.pipe';
+import { CityFilterPipe } from './Pipes/UserPipe/city-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { StockFilterPipe } from './Pipes/ProductPipe/stock-filter.pipe';
     UserDetailComponent,
     CityDetailComponent,
     genderFilterPipe,
+    StateFilterPipe,
+    CityFilterPipe,
     CategoryFilterPipe,
     StockFilterPipe,
     CountryFilterPipe

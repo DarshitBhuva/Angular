@@ -1,12 +1,32 @@
 <div class="container my- 5">
     <h1 class="mt-5 text-center">Users</h1>
 
-    <b>Filter By:</b>
+    <h4>Filter By:</h4>
+
+    <b class="mt-2">Gender: </b>
     <select name="gender" class="form-select mt-2" [(ngModel)] = "filterText"> 
         <option value="All">All</option>
         <option value="Male">Male</option>
         <option value="Female">Female</option>
     </select>
+
+    <div class="row mt-2">
+
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label"><b>City:</b></label>
+            <select name="gender" class="form-select mt-2" [(ngModel)] = "city"> 
+                <option value="All">All</option>
+                <option *ngFor="let c of uniqueCities" [value]="c">{{c}}</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label"><b>State:</b></label>
+            <select name="gender" class="form-select mt-2" [(ngModel)] = "state"> 
+                <option value="All">All</option>
+                <option *ngFor="let c of uniqueStates" [value]="c">{{c}}</option>
+            </select>
+        </div>
+    </div>
     <table class="table mt-5 table-striped table-bordered">
         <thead class="table-dark">
             <tr>
@@ -19,7 +39,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let user of userList | genderfilter : filterText">
+            <tr *ngFor="let user of userList | genderfilter : filterText| cityfilter : city | statefilter : state">
                 <td>{{user.userName}}</td>
                 <td>{{user.email}}</td>
                 <td>{{user.phone}}</td>
