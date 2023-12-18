@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { genderFilterPipe } from './Pipes/UserPipe/gender-filter.pipe';
 import { CategoryFilterPipe } from './Pipes/ProductPipe/category-filter.pipe';
 import { CountryFilterPipe } from './Pipes/CityPipe/country-filter.pipe';
+import { StockFilterPipe } from './Pipes/ProductPipe/stock-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { CountryFilterPipe } from './Pipes/CityPipe/country-filter.pipe';
     CityDetailComponent,
     genderFilterPipe,
     CategoryFilterPipe,
+    StockFilterPipe,
     CountryFilterPipe
   ],
   imports: [

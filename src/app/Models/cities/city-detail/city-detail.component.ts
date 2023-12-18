@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { City } from 'src/app/Interfaces/city';
 import { CitiesService } from 'src/app/Services/cities.service';
 import { ActivatedRoute, Params } from '@angular/router';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-city-detail',
@@ -14,6 +15,8 @@ export class CityDetailComponent {
   city !: City;
   cityId !: number;
 
+  @ViewChild('myForm') form !: NgForm;
+
   constructor(private cityService : CitiesService, private route: ActivatedRoute){
 
     this.route.params.subscribe((params: Params) => {
@@ -25,10 +28,23 @@ export class CityDetailComponent {
     this.cityService.getCityById(this.cityId).then((city:City)=>{
       this.city = city;
       console.log(city);
+
+      this.form.setValue({
+        cname:this.city.cityName,
+        country : this.city.country,
+        population : this.city.population,
+        latitude : this.city.latitude,
+        longitude: this.city.longitude,
+        timezone : this.city.timezone,
+        lang : this.city.language
+      })
     })
 
   }
 
+  onSubmit(){
+    console.log(this.form.value);
+  }
 
 
 }

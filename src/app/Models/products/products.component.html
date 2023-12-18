@@ -1,12 +1,17 @@
 <div class="container my- 5">
     <h1 class="mt-5 text-center">Products</h1>
 
-    <b>Filter By:</b>
-    <select name="gender" class="form-select mt-2" [(ngModel)] = "filterText"> 
+    <h4>Filter By:</h4>
+    <b class="mt-2">Category:</b>
+    <select name="gender" class="form-select my-2" [(ngModel)] = "filterText"> 
         <option value="All">All</option>
         <option *ngFor="let c of uniqueProdCategories" [value]="c">{{c}}</option>
         
     </select>
+    <div class="col-md-12">
+        <label for="inputEmail4" class="form-label"><b>Stock:</b></label>
+        <input type="number" class="form-control" id="inputEmail4" name="stock" [(ngModel)]= "stockvalue" placeholder="Enter minimum stock value of products">
+    </div>
 
     <table class="table mt-5 table-striped table-bordered">
         <thead class="table-dark">
@@ -19,7 +24,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let product of productList | categoryfilter : filterText">
+            <tr *ngFor="let product of productList | categoryfilter : filterText | Stockfilter : stockvalue">
                 <td>{{product.productName}}</td>
                 <td>{{product.category}}</td>
                 <td>{{product.price}}</td>

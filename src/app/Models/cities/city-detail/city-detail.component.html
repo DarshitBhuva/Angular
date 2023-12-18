@@ -1,1 +1,60 @@
-<p>{{city.cityName}}</p>
+<div class="container mt-5">
+    <form class="row g-3" (ngSubmit)="onSubmit()" #myForm="ngForm">
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">City Name</label>
+            <input type="text" class="form-control" id="inputEmail4" name="cname" ngModel #cname="ngModel" required
+                #errcname="ngModel">
+            <div>
+                <small *ngIf="errcname.invalid && errcname.touched" class="text-danger">*City Name is Required</small>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Country</label>
+            <input type="text" class="form-control" id="inputPassword4" name="country" ngModel #country="ngModel" #errcountry = "ngModel" required>
+            <div>
+                <small *ngIf="errcountry.invalid && errcountry.touched" class="text-danger">*Country is Required</small>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="inputPassword5" class="form-label">Population</label>
+            <input type="number" class="form-control" id="inputPassword4" name="population" ngModel #population="ngModel" #errpopulation="ngModel" required>
+            <div>
+                <small *ngIf="errpopulation.invalid && errpopulation.touched" class="text-danger">*Population is Required</small>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label for="inputPassword5" class="form-label">Latitude</label>
+            <input type="number" class="form-control" id="inputPassword4" name="latitude" ngModel #latitude="ngModel" #errlatitude="ngModel" required>
+            <div>
+                <small *ngIf="errlatitude.invalid && errlatitude.touched" class="text-danger">*Latitude is Required</small>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="inputPassword5" class="form-label">Longitude</label>
+            <input type="number" class="form-control" id="inputPassword4" name="longitude" ngModel #longitude="ngModel" #errlongitude="ngModel" required>
+            <div>
+                <small *ngIf="errlongitude.invalid && errlongitude.touched" class="text-danger">*Longitude is Required</small>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="inputPassword5" class="form-label">TimeZone</label>
+            <input type="text" class="form-control" id="inputPassword4" name="timezone" ngModel #timezone="ngModel" #errtimezone="ngModel" required>
+            <div>
+                <small *ngIf="errtimezone.invalid && errtimezone.touched" class="text-danger">*Time Zone is Required</small>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputZip" class="form-label">Language</label>
+            <input type="text" class="form-control" id="inputZip" name="lang" ngModel #lang="ngModel" #errlang="ngModel" required>
+            <div>
+                <small *ngIf="errlang.invalid && errlang.touched" class="text-danger">*State is Required</small>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>

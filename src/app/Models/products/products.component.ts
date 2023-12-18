@@ -15,6 +15,7 @@ export class ProductsComponent {
     uniqueProdCategories : string[] = [];
 
     filterText = "All";
+    stockvalue = 0;
 
     constructor(private productService : ProductsService){
       this.productService.getAllProducts().then((productList: Product[])=>{

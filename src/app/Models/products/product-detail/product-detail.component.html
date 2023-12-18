@@ -1,1 +1,50 @@
-<p *ngIf="product !== undefined">{{product.productName}}</p>
+<!-- <p *ngIf="product !== undefined">{{product.productName}}</p> -->
+<div class="container mt-5">
+    <form class="row g-3" (ngSubmit)="onSubmit()" #myForm="ngForm">
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Product Name</label>
+            <input type="text" class="form-control" id="inputEmail4" name="prodname" ngModel #pname="ngModel" required
+                #errprodname="ngModel">
+            <div>
+                <small *ngIf="errprodname.invalid && errprodname.touched" class="text-danger">*Name is Required</small>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Category</label>
+            <input type="text" class="form-control" id="inputPassword4" name="category" ngModel #category="ngModel" #errcategory = "ngModel" required>
+            <div>
+                <small *ngIf="errcategory.invalid && errcategory.touched" class="text-danger">*Category is Required</small>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <label for="inputPassword5" class="form-label">Discription</label>
+            <input type="text" class="form-control" id="inputPassword4" name="discription" ngModel #discription="ngModel" #errdesc="ngModel" required>
+            <div>
+                <small *ngIf="errdesc.invalid && errdesc.touched" class="text-danger">*Discription is Required</small>
+            </div>
+        </div>
+        <!-- <div class="col-12">
+          <label for="inputAddress" class="form-label">Discription</label>
+          <input type="text" class="form-control" id="inputAddress" name="disc" ngModel #discription="ngModel">
+        </div> -->
+        <div class="col-md-6">
+            <label for="inputCity" class="form-label">Price</label>
+            <input type="number" class="form-control" id="inputCity" name="price" ngModel #price="ngModel" #errprice="ngModel" required>
+            <div>
+                <small *ngIf="errprice.invalid && errprice.touched" class="text-danger">*Price is Required</small>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputZip" class="form-label">Stock</label>
+            <input type="number" class="form-control" id="inputZip" name="stock" ngModel #stock="ngModel" #errstock="ngModel" required>
+            <div>
+                <small *ngIf="errstock.invalid && errstock.touched" class="text-danger">*Stock is Required</small>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>

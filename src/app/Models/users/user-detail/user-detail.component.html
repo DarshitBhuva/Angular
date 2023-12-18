@@ -1,1 +1,60 @@
-<p>{{user.userName}}</p>
+<div class="container mt-5">
+    <form class="row g-3" (ngSubmit)="onSubmit()" #myForm="ngForm">
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">User Name</label>
+            <input type="text" class="form-control" id="inputEmail4" name="uname" ngModel #name="ngModel" required
+                #errname="ngModel">
+            <div>
+                <small *ngIf="errname.invalid && errname.touched" class="text-danger">*Name is Required</small>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Gender</label>
+            <input type="text" class="form-control" id="inputPassword4" name="gender" ngModel #gender="ngModel" #errgender = "ngModel" required>
+            <div>
+                <small *ngIf="errgender.invalid && errgender.touched" class="text-danger">*Gender is Required</small>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="inputPassword5" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputPassword4" name="email" ngModel #email="ngModel" #erremail="ngModel" email required>
+            <div>
+                <small *ngIf="erremail.invalid && erremail.touched" class="text-danger">*Email is Required</small>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="inputPassword5" class="form-label">Phone No</label>
+            <input type="text" class="form-control" id="inputPassword4" name="pnumber" ngModel #pnumber="ngModel" #errpnumber="ngModel" required>
+            <div>
+                <small *ngIf="errpnumber.invalid && errpnumber.touched" class="text-danger">*Phone No. is Required</small>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="inputCity" class="form-label">Street</label>
+            <input type="text" class="form-control" id="inputCity" name="street" ngModel #street="ngModel" #errstreet="ngModel" required>
+            <div>
+                <small *ngIf="errstreet.invalid && errstreet.touched" class="text-danger">*Street is Required</small>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label for="inputZip" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputZip" name="city" ngModel #city="ngModel" #errcity="ngModel" required>
+            <div>
+                <small *ngIf="errcity.invalid && errcity.touched" class="text-danger">*City is Required</small>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputZip" class="form-label">State</label>
+            <input type="text" class="form-control" id="inputZip" name="state" ngModel #state="ngModel" #errstate="ngModel" required>
+            <div>
+                <small *ngIf="errstate.invalid && errstate.touched" class="text-danger">*State is Required</small>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
