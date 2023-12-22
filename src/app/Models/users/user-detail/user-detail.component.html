@@ -19,7 +19,8 @@
             <label for="inputPassword5" class="form-label">Email</label>
             <input type="email" class="form-control" id="inputPassword4" name="email" ngModel #email="ngModel" #erremail="ngModel" email required>
             <div>
-                <small *ngIf="erremail.invalid && erremail.touched" class="text-danger">*Email is Required</small>
+                <small *ngIf="erremail.touched && erremail.errors && erremail.errors['required']" class="text-danger">*Email is Required</small>
+                <small *ngIf="erremail.touched && erremail.errors && erremail.errors['email']">*Enter a valid email address</small>
             </div>
         </div>
         <div class="col-md-6">
