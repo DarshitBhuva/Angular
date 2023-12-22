@@ -6,6 +6,7 @@ import { User } from '../Interfaces/user';
 })
 export class UsersService {
 
+  userList !: User[];
   constructor() { }
 
   url = ' http://localhost:3000/users';
