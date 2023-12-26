@@ -49,7 +49,7 @@ export class UserState {
     @Action(GetUsers)
     getUsers({getState, setState}: StateContext<UserStateModel>){
 
-        return this._userService.getAllUsers().then((res : User[])=>{
+        this._userService.getAllUsers().then((res : User[])=>{
            const state = getState();
         //    console.log(getState());
            setState({
@@ -65,7 +65,18 @@ export class UserState {
 
     @Action(SetSelectedUser)
     setSelectedUser({getState, setState} : StateContext<UserStateModel>, {id}:SetSelectedUser){
-        console.log(id);
+        // console.log(id);
+        const state = getState();
+        const userList = state.users;
+
+        const index = userList.findIndex(user => user.id == id);
+        // console.log(userList[index]);
+        // console.log(userList);
+
+        setState({
+            ...state,
+            selectedUser : userList[index]
+        })
     }
 
 }
