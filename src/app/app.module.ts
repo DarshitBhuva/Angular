@@ -24,6 +24,7 @@ import { CountryFilterPipe } from './Pipes/CityPipe/country-filter.pipe';
 import { StockFilterPipe } from './Pipes/ProductPipe/stock-filter.pipe';
 import { StateFilterPipe } from './Pipes/UserPipe/state.filter.pipe';
 import { CityFilterPipe } from './Pipes/UserPipe/city-filter.pipe';
+import { UserState } from './Store/States/users.state';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,7 @@ import { CityFilterPipe } from './Pipes/UserPipe/city-filter.pipe';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgxsModule.forRoot([]),
+    NgxsModule.forRoot([UserState]),
     NgxsLoggerPluginModule.forRoot(),
     NgxsReduxDevtoolsPluginModule.forRoot()
   ],
